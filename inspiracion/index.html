@@ -261,7 +261,55 @@ var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":
 			//});
 
 		  };</script>
-<style type="text/css" title="dynamic-css" class="options-output">#grve-body{background-color:#0a112e;}</style><noscript><style> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript>	</head>
+<style type="text/css" title="dynamic-css" class="options-output">#grve-body{background-color:#0a112e;}</style><noscript><style> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript>	<style id="ev-inspiration-gallery-css">
+.ev-inspiration-gallery {
+  color: #fff;
+  padding: 24px 0 16px;
+  text-align: center;
+}
+.ev-inspiration-gallery h2 {
+  color: inherit;
+  margin: 0 0 24px;
+}
+.ev-inspiration-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 30px;
+}
+.ev-inspiration-grid figure {
+  margin: 0;
+}
+.ev-inspiration-grid a {
+  display: block;
+}
+.ev-inspiration-grid img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.ev-inspiration-grid figcaption {
+  margin-top: 8px;
+}
+.ev-inspiration-more,
+.ev-inspiration-more:hover,
+.ev-inspiration-more:focus {
+  color: inherit;
+  display: inline-block;
+  margin-top: 24px;
+  text-decoration: underline;
+}
+.ev-inspiration-gallery a:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 4px;
+}
+@media (max-width: 959px) {
+  .ev-inspiration-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 600px) {
+  .ev-inspiration-grid { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+}
+</style>
+</head>
 
 
 
@@ -353,14 +401,17 @@ var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":
 
 																<!-- Main Menu -->
 
-									<nav id="grve-main-menu" class="grve-horizontal-menu grve-position-right grve-menu-type-classic grve-main-menu">
+									<nav id="grve-main-menu" class="grve-horizontal-menu grve-position-right grve-menu-type-classic grve-main-menu" aria-label="Menú principal">
 
 										<div class="grve-wrapper">
 
-											<ul id="menu-menu-productos-modelados" class="grve-menu"><li id="menu-item-640" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-640 grve-first-level"><a href="/estudio-virtual-previa/categoria-producto/sillas-3d/"><span class="grve-item">Sillas</span></a></li>
-<li id="menu-item-642" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-642 grve-first-level"><a href="/estudio-virtual-previa/categoria-producto/mesas-3d/"><span class="grve-item">Mesas</span></a></li>
-<li id="menu-item-643" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-643 grve-first-level"><a href="/estudio-virtual-previa/categoria-producto/sillones-3d/"><span class="grve-item">Sillones</span></a></li>
-<li id="menu-item-651" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-651 grve-first-level"><a href="/estudio-virtual-previa/catalogo/#Sillas"><span class="grve-item">SILLAS</span></a></li>
+											<ul id="ev-menu-principal" class="grve-menu">
+<li class="menu-item grve-first-level"><a href="/estudio-virtual-previa/"><span class="grve-item">Inicio</span></a></li>
+<li class="menu-item grve-first-level"><a href="/estudio-virtual-previa/modelado-3d-y-realidad-virtual/"><span class="grve-item">Modelado 3D</span></a></li>
+<li class="menu-item grve-first-level"><a href="/estudio-virtual-previa/servicios-bim/"><span class="grve-item">Servicios BIM</span></a></li>
+<li class="menu-item grve-first-level"><a href="/estudio-virtual-previa/escaner-laser/"><span class="grve-item">Escáner láser</span></a></li>
+<li class="menu-item grve-first-level current-menu-item"><a href="/estudio-virtual-previa/inspiracion/" aria-current="page"><span class="grve-item">Galería</span></a></li>
+<li class="menu-item grve-first-level"><a href="/estudio-virtual-previa/contacto-cc/"><span class="grve-item">Contacto</span></a></li>
 </ul>										</div>
 
 									</nav>
@@ -432,7 +483,7 @@ var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":
 			<div class="grve-header-element">
 
 
-				<a href="#grve-hidden-menu" class="grve-toggle-hiddenarea" aria-label="Menu">
+				<a href="#grve-hidden-menu" class="grve-toggle-hiddenarea" aria-label="Menú">
 
 
 					
@@ -522,14 +573,17 @@ var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":
 
 													<!-- Main Menu -->
 
-							<nav id="grve-movedo-sticky-menu" class="grve-horizontal-menu grve-position-right grve-main-menu grve-menu-type-classic">
+							<nav id="grve-movedo-sticky-menu" class="grve-horizontal-menu grve-position-right grve-main-menu grve-menu-type-classic" aria-label="Menú fijo">
 
 								<div class="grve-wrapper">
 
-									<ul id="menu-menu-productos-modelados-1" class="grve-menu"><li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-640 grve-first-level"><a href="/estudio-virtual-previa/categoria-producto/sillas-3d/"><span class="grve-item">Sillas</span></a></li>
-<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-642 grve-first-level"><a href="/estudio-virtual-previa/categoria-producto/mesas-3d/"><span class="grve-item">Mesas</span></a></li>
-<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-643 grve-first-level"><a href="/estudio-virtual-previa/categoria-producto/sillones-3d/"><span class="grve-item">Sillones</span></a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-651 grve-first-level"><a href="/estudio-virtual-previa/catalogo/#Sillas"><span class="grve-item">SILLAS</span></a></li>
+									<ul id="ev-menu-fijo" class="grve-menu">
+<li class="menu-item grve-first-level"><a href="/estudio-virtual-previa/"><span class="grve-item">Inicio</span></a></li>
+<li class="menu-item grve-first-level"><a href="/estudio-virtual-previa/modelado-3d-y-realidad-virtual/"><span class="grve-item">Modelado 3D</span></a></li>
+<li class="menu-item grve-first-level"><a href="/estudio-virtual-previa/servicios-bim/"><span class="grve-item">Servicios BIM</span></a></li>
+<li class="menu-item grve-first-level"><a href="/estudio-virtual-previa/escaner-laser/"><span class="grve-item">Escáner láser</span></a></li>
+<li class="menu-item grve-first-level current-menu-item"><a href="/estudio-virtual-previa/inspiracion/" aria-current="page"><span class="grve-item">Galería</span></a></li>
+<li class="menu-item grve-first-level"><a href="/estudio-virtual-previa/contacto-cc/"><span class="grve-item">Contacto</span></a></li>
 </ul>								</div>
 
 							</nav>
@@ -604,35 +658,48 @@ var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":
 						<div id="page-453" class="post-453 page type-page status-publish hentry">
 
 
-							<div class="grve-section grve-row-section grve-fullwidth-background grve-padding-top-2x grve-padding-bottom-2x grve-bg-none"  style="color:#ffffff;"><div class="grve-container"><div class="grve-row grve-bookmark grve-columns-gap-30 cabeceras"><div class="grve-column wpb_column grve-column-1 grve-headings-light grve-align-center" ><div class="grve-column-wrapper" ><div class="grve-empty-space grve-height-6x" style=""></div><h1 class="grve-element grve-title grve-align-center grve-h1" style=""><span>Inspírate con nuestros ambientes</span></h1><div class="grve-empty-space grve-height-2x" style=""></div></div></div></div></div><div class="grve-background-wrapper">  <div class="grve-bg-image grve-bg-center-top grve-bg-image-id-413"   style="background-image: url(/estudio-virtual-previa/wp-content/uploads/2020/04/proyecto-1-1920x1120.jpg);"></div>  <div class="grve-bg-overlay grve-bg-primary-1 grve-opacity-70"></div></div></div><div class="grve-section grve-row-section grve-fullwidth-background grve-padding-top-4x grve-padding-bottom-6x grve-bg-none grve-headings-primary-1"  style="background-color:#0a112e;color:rgb(255,255,255);color:rgba(255,255,255,0.6);"><div class="grve-container"><div class="grve-row grve-bookmark grve-columns-gap-30"><div class="grve-column wpb_column grve-column-1-3" ><div class="grve-column-wrapper" ><div class="grve-element grve-slogan grve-align-left grve-animated-item grve-zoom-in grve-duration-normal" style="" data-delay="400"><h3 class="grve-slogan-title grve-align-left grve-h4"><span>Conócenos</span></h3>  <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fringilla sed neque quis aliquet. Etiam euismod leo sed mauris auctor faucibus. Vivamus risus nisl, malesuada non dignissim at, malesuada et lectus. In purus eros, dapibus quis sem vel, posuere pharetra elit. Sed fringilla, risus vel congue auctor, ligula mauris accumsan massa, nec gravida nisi nisl eget velit. Suspendisse potenti. Ut sit amet dolor id massa hendrerit scelerisque. </p></div></div></div><div class="grve-column wpb_column grve-column-1-3" ><div class="grve-column-wrapper" ><div class="grve-element grve-slogan grve-align-left grve-animated-item grve-zoom-in grve-duration-normal" style="" data-delay="600"><h3 class="grve-slogan-title grve-align-left grve-h4"><span>Hacemos realidad tus proyectos</span></h3>  <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fringilla sed neque quis aliquet. Etiam euismod leo sed mauris auctor faucibus. Vivamus risus nisl, malesuada non dignissim at, malesuada et lectus. In purus eros, dapibus quis sem vel, posuere pharetra elit. Sed fringilla, risus vel congue auctor, ligula mauris accumsan massa, nec gravida nisi nisl eget velit. Suspendisse potenti. Ut sit amet dolor id massa hendrerit scelerisque. </p></div></div></div><div class="grve-column wpb_column grve-column-1-3" ><div class="grve-column-wrapper" ><div class="grve-element grve-slogan grve-align-left grve-animated-item grve-zoom-in grve-duration-normal" style="" data-delay="800"><h3 class="grve-slogan-title grve-align-left grve-h4"><span>Confía en nuestra experiencia</span></h3>  <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fringilla sed neque quis aliquet. Etiam euismod leo sed mauris auctor faucibus. Vivamus risus nisl, malesuada non dignissim at, malesuada et lectus. In purus eros, dapibus quis sem vel, posuere pharetra elit. Sed fringilla, risus vel congue auctor, ligula mauris accumsan massa, nec gravida nisi nisl eget velit. Suspendisse potenti. Ut sit amet dolor id massa hendrerit scelerisque. </p></div></div></div></div></div><div class="grve-background-wrapper"></div></div><div class="grve-section grve-row-section grve-fullwidth-background grve-padding-top-1x grve-padding-bottom-1x grve-bg-none"  style="background-color:#195edf;"><div class="grve-container"><div class="grve-row grve-bookmark grve-columns-gap-30"><div class="grve-column wpb_column grve-column-1 grve-custom-position grve-top-minus-4x" ><div class="grve-column-wrapper" >			<div class="grve-element grve-with-gap grve-portfolio grve-isotope" style="" data-spinner="no" data-columns="3" data-columns-large-screen="3" data-columns-tablet-landscape="2" data-columns-tablet-portrait="2" data-columns-mobile="1" data-layout="fitRows" data-gutter-size="30">
-
-		
-
-			<div class="grve-isotope-container">
-
-							<article id="portfolio-418-6b0374e9841c7" class="grve-isotope-item grve-portfolio-item  post-418 portfolio type-portfolio status-publish has-post-thumbnail hentry">
-
-						<div class="grve-isotope-item-inner grve-hover-item grve-zoom-in grve-hover-style-3">									<figure class="grve-image-hover grve-media grve-zoom-in">
-
-										<a class="grve-item-url" aria-label="Proyecto Ejemplo" href="/estudio-virtual-previa/portfolio/proyecto-ejemplo-2/"></a>																					<div class="grve-bg-primary-1 grve-hover-overlay grve-opacity-70"></div>
-
-																				<img fetchpriority="high" decoding="async" width="560" height="747" src="/estudio-virtual-previa/wp-content/uploads/2020/04/proyecto-1-560x747.jpg" class="attachment-movedo-grve-small-rect-vertical size-movedo-grve-small-rect-vertical" alt="" srcset="/estudio-virtual-previa/wp-content/uploads/2020/04/proyecto-1-560x747.jpg 560w, /estudio-virtual-previa/wp-content/uploads/2020/04/proyecto-1-840x1120.jpg 840w" sizes="(max-width: 560px) 100vw, 560px" />																				<figcaption class="grve-content grve-align-center">
-
-																																	<h4 class="grve-title grve-text-white grve-h6">Proyecto Ejemplo</h4>
-
-																																												<div class="grve-description grve-text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dignissim auctor varius. Proin vehicula dui eu odio vestibulum placerat. </div>
-
-																																											</figcaption>
-
-																			</figure>
-
-													</div>
-
-					</article>
-
-				</div>
-
-			</div>
+							<div class="grve-section grve-row-section grve-fullwidth-background grve-padding-top-2x grve-padding-bottom-2x grve-bg-none"  style="color:#ffffff;"><div class="grve-container"><div class="grve-row grve-bookmark grve-columns-gap-30 cabeceras"><div class="grve-column wpb_column grve-column-1 grve-headings-light grve-align-center" ><div class="grve-column-wrapper" ><div class="grve-empty-space grve-height-6x" style=""></div><h1 class="grve-element grve-title grve-align-center grve-h1" style=""><span>Inspírate con nuestros ambientes</span></h1><div class="grve-empty-space grve-height-2x" style=""></div></div></div></div></div><div class="grve-background-wrapper">  <div class="grve-bg-image grve-bg-center-top grve-bg-image-id-413"   style="background-image: url(/estudio-virtual-previa/wp-content/uploads/2020/04/proyecto-1-1920x1120.jpg);"></div>  <div class="grve-bg-overlay grve-bg-primary-1 grve-opacity-70"></div></div></div><div class="grve-section grve-row-section grve-fullwidth-background grve-padding-top-4x grve-padding-bottom-6x grve-bg-none grve-headings-primary-1"  style="background-color:#0a112e;color:rgb(255,255,255);color:rgba(255,255,255,0.6);"><div class="grve-container"><div class="grve-row grve-bookmark grve-columns-gap-30"><div class="grve-column wpb_column grve-column-1-3" ><div class="grve-column-wrapper" ><div class="grve-element grve-slogan grve-align-left grve-animated-item grve-zoom-in grve-duration-normal" style="" data-delay="400"><h2 class="grve-slogan-title grve-align-left grve-h4"><span>Visualización arquitectónica</span></h2>  <p class="">En Estudio Virtual creamos infografías 3D para mostrar cómo puede verse un espacio antes de construirlo o reformarlo.</p></div></div></div><div class="grve-column wpb_column grve-column-1-3" ><div class="grve-column-wrapper" ><div class="grve-element grve-slogan grve-align-left grve-animated-item grve-zoom-in grve-duration-normal" style="" data-delay="600"><h2 class="grve-slogan-title grve-align-left grve-h4"><span>Interiores y exteriores</span></h2>  <p class="">La luz, los materiales y el mobiliario ayudan a entender el ambiente de cada estancia y su relación con el exterior.</p></div></div></div><div class="grve-column wpb_column grve-column-1-3" ><div class="grve-column-wrapper" ><div class="grve-element grve-slogan grve-align-left grve-animated-item grve-zoom-in grve-duration-normal" style="" data-delay="800"><h2 class="grve-slogan-title grve-align-left grve-h4"><span>Distribución en 3D</span></h2>  <p class="">Una vista en planta permite leer la distribución de un vistazo y ver cómo se conectan las estancias.</p></div></div></div></div></div><div class="grve-background-wrapper"></div></div><div class="grve-section grve-row-section grve-fullwidth-background grve-padding-top-1x grve-padding-bottom-1x grve-bg-none"  style="background-color:#195edf;"><div class="grve-container"><div class="grve-row grve-bookmark grve-columns-gap-30"><div class="grve-column wpb_column grve-column-1 grve-custom-position grve-top-minus-4x" ><div class="grve-column-wrapper" >			<section class="ev-inspiration-gallery" aria-labelledby="ev-inspiration-title">
+  <h2 id="ev-inspiration-title" class="grve-h4">Galería de infografías</h2>
+  <div class="ev-inspiration-grid">
+    <figure>
+      <a href="/estudio-virtual-previa/wp-content/uploads/2020/09/14.jpg" aria-label="Ampliar imagen: Salón abierto a la terraza">
+        <img src="/estudio-virtual-previa/wp-content/uploads/2020/09/14-1024x573.jpg" width="1024" height="573" alt="Salón con sofá gris, suelo de madera y un ventanal hacia la terraza" loading="lazy" decoding="async">
+      </a>
+      <figcaption>Salón abierto a la terraza</figcaption>
+    </figure>
+    <figure>
+      <a href="/estudio-virtual-previa/wp-content/uploads/2020/10/05-comedor.jpg" aria-label="Ampliar imagen: Comedor con estantería">
+        <img src="/estudio-virtual-previa/wp-content/uploads/2020/10/05-comedor-1024x575.jpg" width="1024" height="575" alt="Mesa de comedor junto a una ventana alta y una estantería de pared" loading="lazy" decoding="async">
+      </a>
+      <figcaption>Comedor con estantería</figcaption>
+    </figure>
+    <figure>
+      <a href="/estudio-virtual-previa/wp-content/uploads/2020/10/cocina.jpg" aria-label="Ampliar imagen: Cocina con isla">
+        <img src="/estudio-virtual-previa/wp-content/uploads/2020/10/cocina-1024x573.jpg" width="1024" height="573" alt="Isla con taburetes blancos y cocina oscura con un frente en tono coral" loading="lazy" decoding="async">
+      </a>
+      <figcaption>Cocina con isla</figcaption>
+    </figure>
+    <figure>
+      <a href="/estudio-virtual-previa/wp-content/uploads/2020/10/MAASTRICH-interior_jardinera.jpg" aria-label="Ampliar imagen: Escalera con jardín interior">
+        <img src="/estudio-virtual-previa/wp-content/uploads/2020/10/MAASTRICH-interior_jardinera-1024x573.jpg" width="1024" height="573" alt="Escalera abierta con vegetación debajo y suelo de madera" loading="lazy" decoding="async">
+      </a>
+      <figcaption>Escalera con jardín interior</figcaption>
+    </figure>
+    <figure>
+      <a href="/estudio-virtual-previa/wp-content/uploads/2020/10/Exterior-alzado-01.jpg" aria-label="Ampliar imagen: Vivienda con piscina">
+        <img src="/estudio-virtual-previa/wp-content/uploads/2020/10/Exterior-alzado-01-1024x571.jpg" width="1024" height="571" alt="Fachada de líneas rectas con un porche abierto hacia la piscina" loading="lazy" decoding="async">
+      </a>
+      <figcaption>Vivienda con piscina</figcaption>
+    </figure>
+    <figure>
+      <a href="/estudio-virtual-previa/wp-content/uploads/2020/10/0.jpg" aria-label="Ampliar imagen: Distribución en planta 3D">
+        <img src="/estudio-virtual-previa/wp-content/uploads/2020/10/0-1024x575.jpg" width="1024" height="575" alt="Vista cenital de una vivienda amueblada con varias estancias" loading="lazy" decoding="async">
+      </a>
+      <figcaption>Distribución en planta 3D</figcaption>
+    </figure>
+  </div>
+  <a class="ev-inspiration-more" href="/estudio-virtual-previa/infografias/">Ver todas las infografías</a>
+</section>
 
 
 
@@ -741,7 +808,7 @@ var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":
 							
 <div class="wpcf7 no-js" id="wpcf7-f41-p453-o1" lang="es-ES" dir="ltr">
 <div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
-<form class="wpcf7-form init" aria-label="Contact form" novalidate="novalidate" data-status="init" data-ev-contact method="dialog"><input type="text" name="ev-website" value="" hidden tabindex="-1" autocomplete="off">
+<form class="wpcf7-form init" aria-label="Formulario de contacto" novalidate="novalidate" data-status="init" data-ev-contact method="dialog"><input type="text" name="ev-website" value="" hidden tabindex="-1" autocomplete="off">
 <div style="display: none;">
 <input type="hidden" name="_wpcf7" value="41" />
 <input type="hidden" name="_wpcf7_version" value="5.9.8" />
@@ -767,7 +834,7 @@ var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":
 		<p><span class="wpcf7-form-control-wrap" data-name="your-message"><textarea cols="40" rows="3" maxlength="2000" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" placeholder="Mensaje" name="your-message"></textarea></span>
 		</p>
 	</div>
-	<p><span class="wpcf7-form-control-wrap" data-name="acceptance-420"><span class="wpcf7-form-control wpcf7-acceptance"><span class="wpcf7-list-item"><label><input type="checkbox" name="acceptance-420" value="1" aria-invalid="false" /><span class="wpcf7-list-item-label">Acepto la <a href="/estudio-virtual-previa/politica-privacidad">Política de Privacidad</a></span></label></span></span></span>
+	<p><span class="wpcf7-form-control-wrap" data-name="acceptance-420"><span class="wpcf7-form-control wpcf7-acceptance"><span class="wpcf7-list-item"><label><input type="checkbox" name="acceptance-420" value="1" aria-invalid="false" /><span class="wpcf7-list-item-label">Acepto la <a href="/estudio-virtual-previa/politica-privacidad/">Política de Privacidad</a></span></label></span></span></span>
 	</p>
 	<div>
 		<p><input class="wpcf7-form-control wpcf7-submit has-spinner" type="submit" value="Enviar" />
@@ -814,7 +881,7 @@ Contacto</p>
 	</div></div><div class="grve-column wpb_column grve-column-1-3 grve-headings-primary-2 grve-tablet-sm-align-center grve-mobile-align-center" ><div class="grve-column-wrapper" ><h3 class="grve-element grve-title grve-align-inherit grve-h5" style=""><span>Contacto</span></h3><div class="grve-element grve-text">
 
 
-			<p><a href="tel:+34654151150">622 480 222</a><br />
+			<p><a href="tel:+34622480222">622 480 222</a><br />
 <a href="mailto:info@estudiovirtual.es">info@estudiovirtual.es</a></p>
 
 
@@ -850,7 +917,7 @@ Contacto</p>
 
 			</div>
 
-		</div></div></div></div><div class="grve-background-wrapper"></div></div><div class="grve-section grve-row-section grve-fullwidth-background grve-bg-none grve-desktop-row-hide grve-tablet-row-hide"><div class="grve-container"><div class="grve-row grve-bookmark grve-columns-gap-30"><div class="grve-column wpb_column grve-column-1" id="fijo"  style="z-index:999" ><div class="grve-column-wrapper" ><div class="grve-element grve-align-left fijo-movil grve-fluid-button"><a href="tel:%20622%20480%20222" class="grve-btn grve-btn-large grve-shadow-small grve-square grve-bg-primary-1 grve-bg-hover-black" style="max-width: 250px;"><span><i class="smp-icon-phone"></i></span></a></div></div></div></div></div><div class="grve-background-wrapper"></div></div><div class="grve-section grve-row-section grve-fullwidth-background grve-bg-none grve-tablet-sm-row-hide grve-mobile-row-hide"><div class="grve-container"><div class="grve-row grve-bookmark grve-columns-gap-30"><div class="grve-column wpb_column grve-column-1" id="fijo"  style="z-index:999" ><div class="grve-column-wrapper" ><div class="grve-element grve-align-right fijo grve-fluid-button"><a href="#contact" title="Contacto" class="grve-btn grve-btn-large grve-shadow-small grve-square grve-bg-primary-1 grve-bg-hover-black grve-modal-popup" style="max-width: 250px;"><span><i class="smp-icon-envelope"></i></span></a></div></div></div></div></div><div class="grve-background-wrapper"></div></div>
+		</div></div></div></div><div class="grve-background-wrapper"></div></div><div class="grve-section grve-row-section grve-fullwidth-background grve-bg-none grve-desktop-row-hide grve-tablet-row-hide"><div class="grve-container"><div class="grve-row grve-bookmark grve-columns-gap-30"><div class="grve-column wpb_column grve-column-1" id="fijo"  style="z-index:999" ><div class="grve-column-wrapper" ><div class="grve-element grve-align-left fijo-movil grve-fluid-button"><a href="tel:+34622480222" class="grve-btn grve-btn-large grve-shadow-small grve-square grve-bg-primary-1 grve-bg-hover-black" style="max-width: 250px;"><span><i class="smp-icon-phone"></i></span></a></div></div></div></div></div><div class="grve-background-wrapper"></div></div><div class="grve-section grve-row-section grve-fullwidth-background grve-bg-none grve-tablet-sm-row-hide grve-mobile-row-hide"><div class="grve-container"><div class="grve-row grve-bookmark grve-columns-gap-30"><div class="grve-column wpb_column grve-column-1" id="fijo"  style="z-index:999" ><div class="grve-column-wrapper" ><div class="grve-element grve-align-right fijo grve-fluid-button"><a href="#contact" title="Contacto" class="grve-btn grve-btn-large grve-shadow-small grve-square grve-bg-primary-1 grve-bg-hover-black grve-modal-popup" style="max-width: 250px;"><span><i class="smp-icon-envelope"></i></span></a></div></div></div></div></div><div class="grve-background-wrapper"></div></div>
 
 			</div>
 
@@ -938,7 +1005,7 @@ Contacto</p>
 
 			
 
-		<nav id="grve-hidden-menu" class="grve-hidden-area grve-small-width grve-toggle-menu grve-align-left">
+		<nav id="grve-hidden-menu" class="grve-hidden-area grve-small-width grve-toggle-menu grve-align-left" aria-label="Menú móvil">
 
 
 			<div class="grve-hiddenarea-wrapper">
@@ -970,10 +1037,13 @@ Contacto</p>
 					<div id="grve-hidden-menu-wrapper" class="grve-menu-wrapper">
 
 
-						<ul id="menu-menu-productos-modelados-2" class="grve-menu"><li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-640 grve-first-level"><a href="/estudio-virtual-previa/categoria-producto/sillas-3d/"><span class="grve-item">Sillas</span></a></li>
-<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-642 grve-first-level"><a href="/estudio-virtual-previa/categoria-producto/mesas-3d/"><span class="grve-item">Mesas</span></a></li>
-<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-643 grve-first-level"><a href="/estudio-virtual-previa/categoria-producto/sillones-3d/"><span class="grve-item">Sillones</span></a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-651 grve-first-level"><a href="/estudio-virtual-previa/catalogo/#Sillas"><span class="grve-item">SILLAS</span></a></li>
+						<ul id="ev-menu-movil" class="grve-menu">
+<li class="menu-item grve-first-level"><a href="/estudio-virtual-previa/"><span class="grve-item">Inicio</span></a></li>
+<li class="menu-item grve-first-level"><a href="/estudio-virtual-previa/modelado-3d-y-realidad-virtual/"><span class="grve-item">Modelado 3D</span></a></li>
+<li class="menu-item grve-first-level"><a href="/estudio-virtual-previa/servicios-bim/"><span class="grve-item">Servicios BIM</span></a></li>
+<li class="menu-item grve-first-level"><a href="/estudio-virtual-previa/escaner-laser/"><span class="grve-item">Escáner láser</span></a></li>
+<li class="menu-item grve-first-level current-menu-item"><a href="/estudio-virtual-previa/inspiracion/" aria-current="page"><span class="grve-item">Galería</span></a></li>
+<li class="menu-item grve-first-level"><a href="/estudio-virtual-previa/contacto-cc/"><span class="grve-item">Contacto</span></a></li>
 </ul>
 
 					</div>
